@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8f8ec">
+
+  <title>Таза Қазақстан | BY DARKHAN</title>
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="nature-bg"></div>
+
+  <header class="header">
+    <div class="brand">
+      <div class="logo">✿</div>
+
+      <div>
+        <strong>ТАЗА ҚАЗАҚСТАН</strong>
+        <small>АШЫҚ ТӘРБИЕ САҒАТЫ</small>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <span id="phaseLabel">БАСТЫ БЕТ</span>
+
+      <span id="clock">25:00</span>
+
+      <button
+        class="timer-button"
+        id="timerButton"
+        onclick="toggleTimer()"
+        title="Таймерді қосу немесе тоқтату">
+        ▶
+      </button>
+    </div>
+  </header>
+
+  <!-- ОҢ ЖАҚТАҒЫ БАТЫРМАЛАР -->
+
+  <aside class="right-panel">
+
+    <button class="rail-button"
+            onclick="showHome()">
+      <span>⌂</span>
+      <small>Басты</small>
+    </button>
+
+    <button class="rail-button"
+            id="backButton"
+            onclick="goBack()">
+      <span>←</span>
+      <small>Артқа</small>
+    </button>
+
+    <button class="rail-button primary"
+            id="nextButton"
+            onclick="goNext()">
+      <span>→</span>
+      <small>Келесі</small>
+    </button>
+
+    <button class="rail-button"
+            onclick="showGame(0)">
+      <span>★</span>
+      <small>Ойын</small>
+    </button>
+
+    <button class="rail-button"
+            onclick="toggleFullscreen()">
+      <span>⛶</span>
+      <small>Экран</small>
+    </button>
+
+  </aside>
+
+  <!-- БАРЛЫҚ БЕТ ОСЫНДА АШЫЛАДЫ -->
+
+  <main id="app"></main>
+
+  <footer class="footer">
+    <span>
+      ТАБИҒАТ · ТАЗАЛЫҚ · ЖАУАПКЕРШІЛІК
+    </span>
+
+    <strong>BY DARKHAN</strong>
+  </footer>
+
+</body>
+</html>
